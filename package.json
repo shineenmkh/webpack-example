@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "webpack --watch",
     "dev": "webpack --mode development",
     "build": "webpack --mode production",
     "start": "webpack serve --open"
@@ -13,7 +14,11 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@babel/cli": "^7.14.8",
+    "@babel/core": "^7.15.0",
+    "@babel/preset-env": "^7.15.0",
     "autoprefixer": "^10.3.2",
+    "babel-loader": "^8.2.2",
     "css-loader": "^6.2.0",
     "html-webpack-plugin": "^5.3.2",
     "postcss-loader": "^6.1.1",
@@ -26,6 +31,7 @@
     "webpack-dev-server": "^4.0.0"
   },
   "dependencies": {
+    "@babel/polyfill": "^7.12.1",
     "lodash": "^4.17.21",
     "normalize.css": "^8.0.1"
   }

@@ -10,8 +10,11 @@ module.exports = {
   },
   devtool: "inline-source-map",
   devServer: {
+    // before:function(app, server){
+    //   server._watch("./src/**/*.html")
+    // },
     static: "./dist",
-    port: 3000,
+    port: 3000
   },
   plugins: [
     new HtmlWebpackPlugin({
@@ -38,6 +41,18 @@ module.exports = {
         test: /\.xml$/i,
         use: ["xml-loader"],
       },
+      {
+        test: /\.m?js$/,
+        exclude: /node_modules/,
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: [
+              ['@babel/preset-env', { targets: "defaults" }]
+            ]
+          }
+        }
+      }
     ],
   },
 };
