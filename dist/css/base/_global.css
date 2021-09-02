@@ -1,5 +1,4 @@
 
-
 body{
     font-family: "Roboto", sans-serif;
 }
@@ -8,3 +7,16 @@ img{
     width: 100%;
     height: auto;
 }
+
+.font-size{
+    font-size: 1rem;
+
+    &--big{
+        font-size: 1.8rem;
+    }
+
+    &--medium{
+        font-size: 1.4rem;
+    }
+}
+

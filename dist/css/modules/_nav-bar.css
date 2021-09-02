@@ -1,0 +1,7 @@
+.nav-bar{
+      position: relative;
+      border: 5px solid;
+      display: flex;
+      font-size: 1rem;
+      padding: 1rem;
+}
