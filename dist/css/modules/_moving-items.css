@@ -1,0 +1,24 @@
+.moving-items{
+      border: 3px solid $mainOrange;
+      padding: 1rem;
+
+      &__container{
+
+            border: 3px solid $mainBlue;
+            padding: 0.1rem;
+            display: flex;
+            justify-content: space-between;
+            
+      }
+
+      &__items{
+
+            border: 2px solid $mainOrange;
+            padding: 2rem;
+            margin-right: 0.5rem;
+      }
+
+      &__items:last-child{
+            margin-right: 0;
+      }
+}
