@@ -1,14 +1,23 @@
 .moving-items{
+      
+      position: absolute;
       border: 3px solid $mainOrange;
       padding: 1rem;
+      display: flex;
+      justify-content: space-between;
 
       &__container{
-
+            
+            position: absolute;
             border: 3px solid $mainBlue;
-            padding: 0.1rem;
+            padding: 3px;
             display: flex;
             justify-content: space-between;
-            
+      }
+
+      &__container:hover{
+
+            cursor: pointer;
       }
 
       &__items{
